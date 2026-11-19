@@ -8,15 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@eve/agent-browser':
+        specifier: 0.2.1
+        version: 0.2.1(eve@1.1.0(ai@7.0.173(zod@4.4.3)))
       '@vercel/connect':
         specifier: 2.9.1
-        version: 2.9.1(ai@7.0.173(zod@4.4.3))(eve@1.0.1(ai@7.0.173(zod@4.4.3)))
+        version: 2.9.1(ai@7.0.173(zod@4.4.3))(eve@1.1.0(ai@7.0.173(zod@4.4.3)))
       ai:
         specifier: 7.0.173
         version: 7.0.173(zod@4.4.3)
       eve:
-        specifier: 1.0.1
-        version: 1.0.1(ai@7.0.173(zod@4.4.3))
+        specifier: 1.1.0
+        version: 1.1.0(ai@7.0.173(zod@4.4.3))
       zod:
         specifier: 4.4.3
         version: 4.4.3
@@ -54,6 +57,12 @@ packages:
 
   '@emnapi/wasi-threads@2.2.0':
     resolution: {integrity: sha512-JP7OYH38Q7+pyTAe14raZHLQIK7BDKbdwji+Xi3pcd/6QkJYQH3SX4wu6EplGrGJWRepoNzedfm0G3B9Z4e9Rw==}
+
+  '@eve/agent-browser@0.2.1':
+    resolution: {integrity: sha512-Pp14EahD7TIiw21OcBgDSyxhNxFx0FUapnoIk19+Mu/Vsnyl9SmBGpD4/ycmAfiQxQgPKxDS4ItEF4O8ekJY1w==}
+    engines: {node: '>=24.0.0'}
+    peerDependencies:
+      eve: '>=1.0.0'
 
   '@napi-rs/wasm-runtime@1.2.6':
     resolution: {integrity: sha512-mRyDmEw9/fCDXCGfL1sbgIw/GUK0PVxRW4YwgPN61F3LQ+fSyoBFarJVzgGyhF6kRzEQZ0FejDqm4WLXSeqQmw==}
@@ -364,8 +373,8 @@ packages:
     resolution: {integrity: sha512-jKG29hxqGrL9ktunIwmt9aHbP3n995DGUY1KyXS7iGYFoD/yDdpc2CjJt6remFI3x2H1JOmBBMo0KXxjEQ2G6g==}
     hasBin: true
 
-  eve@1.0.1:
-    resolution: {integrity: sha512-h+6SvFavUarfFBVVi/8G9/zSJMJuusJxeOPDi4WLWFPu1QgF9xe6OVPPtH93oKr4abV9blj0/DUf89hX1lMYMw==}
+  eve@1.1.0:
+    resolution: {integrity: sha512-Dblzqj5FENNljN1cPkEPWGjG6OZG8DTUhfxowwVeyAMtbbRgZcVWgTmD4giYIiq8gl3M5AFWpPjhcHrPuET8lQ==}
     engines: {node: '>=24'}
     hasBin: true
     peerDependencies:
@@ -584,6 +593,11 @@ snapshots:
       tslib: 2.9.1
     optional: true
 
+  '@eve/agent-browser@0.2.1(eve@1.1.0(ai@7.0.173(zod@4.4.3)))':
+    dependencies:
+      eve: 1.1.0(ai@7.0.173(zod@4.4.3))
+      zod: 4.6.7
+
   '@napi-rs/wasm-runtime@1.2.6(@emnapi/core@2.0.0-beta.2)(@emnapi/runtime@2.0.0-beta.2)':
     dependencies:
       '@emnapi/core': 2.0.0-beta.2
@@ -727,12 +741,12 @@ snapshots:
     dependencies:
       execa: 5.1.1
 
-  '@vercel/connect@2.9.1(ai@7.0.173(zod@4.4.3))(eve@1.0.1(ai@7.0.173(zod@4.4.3)))':
+  '@vercel/connect@2.9.1(ai@7.0.173(zod@4.4.3))(eve@1.1.0(ai@7.0.173(zod@4.4.3)))':
     dependencies:
       '@vercel/oidc': 4.0.8
     optionalDependencies:
       ai: 7.0.173(zod@4.4.3)
-      eve: 1.0.1(ai@7.0.173(zod@4.4.3))
+      eve: 1.1.0(ai@7.0.173(zod@4.4.3))
 
   '@vercel/oidc@3.2.0': {}
 
@@ -766,7 +780,7 @@ snapshots:
       crossws: 0.4.17(srvx@1.0.8)
       srvx: 1.0.8
 
-  eve@1.0.1(ai@7.0.173(zod@4.4.3)):
+  eve@1.1.0(ai@7.0.173(zod@4.4.3)):
     dependencies:
       ai: 7.0.173(zod@4.4.3)
       nitro: 3.0.261103-rc
