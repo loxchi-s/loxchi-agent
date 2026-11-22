@@ -1,7 +1,8 @@
+import { google } from "@ai-sdk/google";
 import { defineAgent } from "eve";
 
 export default defineAgent({
-  "model": "nvidia/nemotron-3.5-lightning-free",
+  "model": google("gemini-3.8-flash"),
   "reasoning": "medium",
   "compaction": {
     "threshold": 0.7
